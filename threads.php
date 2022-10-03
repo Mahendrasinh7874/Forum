@@ -20,34 +20,15 @@
     
 
     <div class="container my-3">
-        <h2 class="text-center my-2">IDiscuss -categories</h2>
-
-        <div class="row my-5" grid-gutter-width='10px'>
-
-            <?php 
-    $sql = 'SELECT * FROM `category`';
-    $result = mysqli_query($conn,$sql) ;
-    while ($row = mysqli_fetch_assoc($result)) {
-
-      $cat = $row['category_name'];
-      $desc = $row['category_description'];
-
-      echo ' <div class="col-md-6 col-lg-4 mb-md-3 mb-3">
-      <div class="card w-md-75 w-100" >
-<div class="card-body">
-  <h5 class="card-title">' .$cat .' </h5>
-  <p class="card-text">' .substr($desc,0,65) .'... </p>
-  <a href="threads.php" class="btn btn-primary">Go somewhere</a>
+    <div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
 </div>
-</div>
-      </div>';
-    }
-    ?>
-
-        </div>
-
-    </div>
-
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
